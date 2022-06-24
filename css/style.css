@@ -1,3 +1,93 @@
+@keyframes backgroundAnima {
+  0% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+:root {
+  --colorbackground:black;
+}
 
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: var(--colorbackground);
+}
+.container .sidebar {
+  background: rgba(8, 76, 42, 0.87);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgb(8, 76, 42);
+  height: 50vh;
+  text-transform: uppercase;
+}
+.container .sidebar ul {
+  height: 100%;
+  width: 3vw;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .sidebar ul li {
+  height: 100%;
+  width: 100%;
+  margin-top: 1px;
+}
+.container .sidebar ul li a {
+  height: 100%;
+  width: 100%;
+  background-color: #00CCC0;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container main {
+  overflow-y: scroll;
+  flex-grow: 1;
+}
+.container #accueil {
+  height: 100vh;
+  background: var(--colorbackground);
+  animation: backgroundAnima 5s ease 0s 1 normal forwards;
+  color: white;
+}
+.container #accueil h1 {
+  color: red;
+  text-align: center;
+}
+.container #accueil .titlePage {
+  left: 0%;
+}
+.container #presentation {
+  height: 100vh;
+  background: var(--colorbackground);
+  text-align: center;
+}
+.container #competences {
+  height: 100vh;
+  background: var(--colorbackground);
+  text-align: center;
+}
+.container #projets {
+  height: 100vh;
+  background: var(--colorbackground);
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
