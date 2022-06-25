@@ -1,3 +1,20 @@
+@keyframes backgroundAnima {
+	0% {
+		background-position: 50% 0%;
+	}
+
+	100% {
+		background-position: 50% 100%;
+	}
+}
+:root{
+    --colorbackground:black;
+    --colorblanc:white;
+    --color2:#00CCC0;
+    --colorhover:crimson;
+}
+
+
 *,::before,::after{
     padding: 0;
     margin: 0;
@@ -5,33 +22,66 @@
     scroll-behavior: smooth;
 }
 
+
 .container{
-        display: flex;
-        height: 100vh;
-        .sidebar{
-            background-color: #FF4858;
-            height: 100vh;
-            ul{
-                padding-top: 12.5rem;
-                height: 60%;
-                width: 15vw;
-                list-style: none;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                li{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: var(--colorbackground);
+    // top: 50rem;
+
+    .sidebar{
+        margin-top: 10rem;
+
+        background: rgba(8, 76, 42, 0.87);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        border: 1px solid rgba(8, 76, 42, 1);
+        height: 50vh;
+        text-transform: uppercase;
+        ul{
+            // padding-top: 200px;
+            height: 100%;
+            width: 3vw;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            li{
+                height: 100%;
+                width: 100%;
+                margin-top: 0; 
+                :hover{
+                    background:var(--colorhover
+                    );
+                    color:var(--colorblanc) ;
+                }               
+                a{
                     height: 100%;
                     width: 100%;
-                    margin-top: 1px;                
-                    a{
-                        text-align: center;
-                    }
+                    background-color:var(--color2);
+                    text-decoration: none;
+                    color: #333;
+                    font-size: 1.3rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
             }
         }
-        main{
-            overflow-y: scroll;
-            flex-grow: 1;
-            background-color: red;
+    }
+    main{
+        overflow-y: scroll;
+        flex-grow: 1;
+        article{
+        color: var(--colorblanc);
         }
+    }
 }
+footer{
+    text-align: center;
+    background-color: var(--color2);
+}
+

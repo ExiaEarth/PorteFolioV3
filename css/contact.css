@@ -1,3 +1,18 @@
+@keyframes backgroundAnima {
+  0% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+:root {
+  --colorbackground:black;
+  --colorblanc:white;
+  --color2:#00CCC0;
+  --colorhover:crimson;
+}
+
 *, ::before, ::after {
   padding: 0;
   margin: 0;
@@ -8,15 +23,23 @@
 .container {
   display: flex;
   height: 100vh;
+  width: 100vw;
+  background: var(--colorbackground);
 }
 .container .sidebar {
-  background-color: #FF4858;
-  height: 100vh;
+  margin-top: 10rem;
+  background: rgba(8, 76, 42, 0.87);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgb(8, 76, 42);
+  height: 50vh;
+  text-transform: uppercase;
 }
 .container .sidebar ul {
-  padding-top: 12.5rem;
-  height: 60%;
-  width: 15vw;
+  height: 100%;
+  width: 3vw;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -25,15 +48,34 @@
 .container .sidebar ul li {
   height: 100%;
   width: 100%;
-  margin-top: 1px;
+  margin-top: 0;
+}
+.container .sidebar ul li :hover {
+  background: var(--colorhover);
+  color: var(--colorblanc);
 }
 .container .sidebar ul li a {
-  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color2);
+  text-decoration: none;
+  color: #333;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container main {
   overflow-y: scroll;
   flex-grow: 1;
-  background-color: red;
+}
+.container main article {
+  color: var(--colorblanc);
+}
+
+footer {
+  text-align: center;
+  background-color: var(--color2);
 }
 
 /*# sourceMappingURL=contact.css.map */

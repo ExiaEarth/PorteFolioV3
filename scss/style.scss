@@ -10,6 +10,9 @@
 }
 :root{
     --colorbackground:black;
+    --colorblanc:white;
+    --color2:#00CCC0;
+    --colorhover:crimson;
 }
 
 
@@ -29,6 +32,8 @@
     // top: 50rem;
 
     .sidebar{
+        margin-top: 10rem;
+
         background: rgba(8, 76, 42, 0.87);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -48,11 +53,16 @@
             li{
                 height: 100%;
                 width: 100%;
-                margin-top: 1px;                
+                margin-top: 0; 
+                :hover{
+                    background:var(--colorhover
+                    );
+                    color:var(--colorblanc) ;
+                }               
                 a{
                     height: 100%;
                     width: 100%;
-                    background-color: #00CCC0;
+                    background-color:var(--color2);
                     text-decoration: none;
                     color: #333;
                     font-size: 1.3rem;
@@ -67,40 +77,113 @@
     main{
         overflow-y: scroll;
         flex-grow: 1;
-    }
+        #accueil{
+            height: 100vh;
+            background: var(--colorbackground);
+            // animation: backgroundAnima 5s ease 0s 1 normal forwards;
+            text-transform: uppercase;
+            // text-align: center;
+            h1{
+                color: red;
+                text-align: center;
     
-    #accueil{
-        height: 100vh;
-        background: var(--colorbackground);
-        animation: backgroundAnima 5s ease 0s 1 normal forwards;
-        // text-align: center;
-        color: white;
-        h1{
-            color: red;
+            }
+            .titlePage{
+                height: 2rem;
+                left: 0%;
+                color:var(--color2);
+                text-transform: uppercase;
+            }
+            .slogan{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+            .sloganAnimation1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 5rem;
+            }
+            .letter{
+                color:var(--color2);
+            }
+            .arrow{
+                color: var(--colorTexte1);
+                position: absolute;
+                bottom: 5px;
+                left: 50%;
+                /* transform: translateX(-100%); */
+                transform:translateY(1200%) ;
+                
+            }
+            .arrow{
+                .material-icons{
+                font-size: 3rem;
+                opacity: 0;
+                color: var(--colorTexte1);
+                }
+            }
+        }
+        
+        #presentation{
+            height: 100vh;
+            background: var(--colorbackground);
             text-align: center;
 
+            }
+            article{
+                background: rgba(120, 120, 120, 0.25);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                height: 100%;
+                display: flex;
+                color: var(--colorblanc);
+                .titlePage{
+                    height: 2rem;
+                    left: 0%;
+                    color:var(--color2);
+                    text-transform: uppercase;
+
+                img{
+                    height:5rem;
+                    border: 1px solid red;
+                }
+                p{
+                    border: 1px solid rgb(217, 255, 4);
+                }
+            }
         }
-        .titlePage{
-            left: 0%;
-        }
-    }
     
-    #presentation{
-        height: 100vh;
-        background: var(--colorbackground);
-        text-align: center;
+        #competences{
+            height: 100vh;
+            background: var(--colorbackground);  
+            text-align: center;
+            .titlePage{
+                height: 2rem;
+                left: 0%;
+                color:var(--color2);
+                text-transform: uppercase;
+            }
+        }
+    
+        #projets{
+            height: 100vh;
+            background: var(--colorbackground);
+            text-align: center;
+            .titlePage{
+                height: 2rem;
+                left: 0%;
+                color:var(--color2);
+                text-transform: uppercase;
+            }
+        }
     }
-
-    #competences{
-        height: 100vh;
-        background: var(--colorbackground);  
-        text-align: center;
-    }
-
-    #projets{
-        height: 100vh;
-        background: var(--colorbackground);
-        text-align: center;
-    }
+}
+footer{
+    height: 5rem;
+    text-align: center;
+    background-color: var(--color2);
 }
 

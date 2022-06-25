@@ -8,6 +8,9 @@
 }
 :root {
   --colorbackground:black;
+  --colorblanc:white;
+  --color2:#00CCC0;
+  --colorhover:crimson;
 }
 
 *, ::before, ::after {
@@ -24,6 +27,7 @@
   background: var(--colorbackground);
 }
 .container .sidebar {
+  margin-top: 10rem;
   background: rgba(8, 76, 42, 0.87);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -44,12 +48,16 @@
 .container .sidebar ul li {
   height: 100%;
   width: 100%;
-  margin-top: 1px;
+  margin-top: 0;
+}
+.container .sidebar ul li :hover {
+  background: var(--colorhover);
+  color: var(--colorblanc);
 }
 .container .sidebar ul li a {
   height: 100%;
   width: 100%;
-  background-color: #00CCC0;
+  background-color: var(--color2);
   text-decoration: none;
   color: #333;
   font-size: 1.3rem;
@@ -61,33 +69,102 @@
   overflow-y: scroll;
   flex-grow: 1;
 }
-.container #accueil {
+.container main #accueil {
   height: 100vh;
   background: var(--colorbackground);
-  animation: backgroundAnima 5s ease 0s 1 normal forwards;
-  color: white;
+  text-transform: uppercase;
 }
-.container #accueil h1 {
+.container main #accueil h1 {
   color: red;
   text-align: center;
 }
-.container #accueil .titlePage {
+.container main #accueil .titlePage {
+  height: 2rem;
   left: 0%;
+  color: var(--color2);
+  text-transform: uppercase;
 }
-.container #presentation {
+.container main #accueil .slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container main #accueil .sloganAnimation1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+.container main #accueil .letter {
+  color: var(--color2);
+}
+.container main #accueil .arrow {
+  color: var(--colorTexte1);
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  /* transform: translateX(-100%); */
+  transform: translateY(1200%);
+}
+.container main #accueil .arrow .material-icons {
+  font-size: 3rem;
+  opacity: 0;
+  color: var(--colorTexte1);
+}
+.container main #presentation {
   height: 100vh;
   background: var(--colorbackground);
   text-align: center;
 }
-.container #competences {
+.container main article {
+  background: rgba(120, 120, 120, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  height: 100%;
+  display: flex;
+  color: var(--colorblanc);
+}
+.container main article .titlePage {
+  height: 2rem;
+  left: 0%;
+  color: var(--color2);
+  text-transform: uppercase;
+}
+.container main article .titlePage img {
+  height: 5rem;
+  border: 1px solid red;
+}
+.container main article .titlePage p {
+  border: 1px solid rgb(217, 255, 4);
+}
+.container main #competences {
   height: 100vh;
   background: var(--colorbackground);
   text-align: center;
 }
-.container #projets {
+.container main #competences .titlePage {
+  height: 2rem;
+  left: 0%;
+  color: var(--color2);
+  text-transform: uppercase;
+}
+.container main #projets {
   height: 100vh;
   background: var(--colorbackground);
   text-align: center;
+}
+.container main #projets .titlePage {
+  height: 2rem;
+  left: 0%;
+  color: var(--color2);
+  text-transform: uppercase;
+}
+
+footer {
+  height: 5rem;
+  text-align: center;
+  background-color: var(--color2);
 }
 
 /*# sourceMappingURL=style.css.map */
