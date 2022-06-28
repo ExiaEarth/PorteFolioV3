@@ -27,7 +27,7 @@
   background: var(--colorbackground);
 }
 .container .sidebar {
-  margin-top: 10rem;
+  margin-top: 15rem;
   background: rgba(8, 76, 42, 0.87);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -76,19 +76,18 @@
 }
 .container main #accueil h1 {
   color: red;
-  text-align: center;
+  position: relative;
 }
 .container main #accueil .titlePage {
+  margin-top: 10rem;
   height: 2rem;
-  left: 0%;
   color: var(--color2);
   text-transform: uppercase;
 }
 .container main #accueil .slogan {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  top: 10rem;
+  left: 15rem;
 }
 .container main #accueil .sloganAnimation1 {
   display: flex;
@@ -165,6 +164,15 @@ footer {
   height: 5rem;
   text-align: center;
   background-color: var(--color2);
+  display: flex;
+}
+footer ul {
+  list-style: none;
+  align-items: center;
+  flex-direction: column;
+}
+footer ul li a img {
+  height: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

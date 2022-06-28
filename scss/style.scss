@@ -8,6 +8,18 @@
 		background-position: 50% 100%;
 	}
 }
+// @keyframes gradient {
+//     0%{
+//         background-position: 0% 50%;
+//     }
+//     50%{
+//         background-position: 100% 50%;
+//     }
+//     100%{
+//         background-position: 0% 50%;
+//     }
+
+// }
 :root{
     --colorbackground:black;
     --colorblanc:white;
@@ -31,8 +43,20 @@
     background: var(--colorbackground);
     // top: 50rem;
 
+    // .reveal{
+    // position: relative;
+    // transform: translateY(150px);
+    // opacity: 0;
+    // transition: 2s all ease;
+    // .active{
+    //     transform: translateY(0);
+    //     opacity: 1;
+    //   }
+    // }
+    
+
     .sidebar{
-        margin-top: 10rem;
+        margin-top: 15rem;
 
         background: rgba(8, 76, 42, 0.87);
         border-radius: 16px;
@@ -55,9 +79,9 @@
                 width: 100%;
                 margin-top: 0; 
                 :hover{
-                    background:var(--colorhover
-                    );
+                    background:var(--colorhover);
                     color:var(--colorblanc) ;
+
                 }               
                 a{
                     height: 100%;
@@ -81,24 +105,23 @@
             height: 100vh;
             background: var(--colorbackground);
             // animation: backgroundAnima 5s ease 0s 1 normal forwards;
-            text-transform: uppercase;
-            // text-align: center;
+            text-transform: uppercase;            
             h1{
                 color: red;
-                text-align: center;
-    
+                position: relative;
+
             }
             .titlePage{
+                margin-top: 10rem;
+                // margin-left: 2rem;
                 height: 2rem;
-                left: 0%;
                 color:var(--color2);
-                text-transform: uppercase;
+                text-transform: uppercase;            
             }
             .slogan{
-                position: absolute;
-                top:50%;
-                left:50%;
-                transform: translate(-50%,-50%);
+                position: relative;
+                top: 10rem;
+                left: 15rem;
             }
             .sloganAnimation1{
                 display: flex;
@@ -185,5 +208,22 @@ footer{
     height: 5rem;
     text-align: center;
     background-color: var(--color2);
+    display: flex;
+    ul{
+        list-style: none;
+        align-items: center;
+        flex-direction: column;
+        h3{
+
+        }
+        li{
+            a{
+                img{
+                    height: 2rem;
+                }
+
+            }
+        }
+    }
 }
 
