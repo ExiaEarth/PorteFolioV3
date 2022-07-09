@@ -27,14 +27,12 @@
     --colorhover:crimson;
 }
 
-
 *,::before,::after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
 
 .container{
     display: flex;
@@ -53,8 +51,6 @@
     //     opacity: 1;
     //   }
     // }
-    
-
     .sidebar{
         margin-top: 15rem;
         background: rgba(8, 76, 42, 0.87);
@@ -96,10 +92,58 @@
             }
         }
     }
-
     main{
+        height: 100vh;
+        width: 100vw;
         overflow-y: scroll;
         flex-grow: 1;
+        .arrow{
+            border: 1px solid red($color: #000000);
+            color: var(--colorTexte1);
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            /* transform: translateX(-100%); */
+            transform:translateY(1200%) ;
+            
+        }
+        .arrow{
+            .material-icons{
+            font-size: 3rem;
+            opacity: 0;
+            color: var(--colorTexte1);
+            }
+        }
+        .article{
+            background: rgba(120, 120, 120, 0.25);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            height: 100%;
+            display: flex;
+            color: var(--colorblanc);
+            .titlePage{
+                height: 2rem;
+                left: 0%;
+                color:var(--color2);
+                text-transform: uppercase;
+
+            img{
+                height:5rem;
+                border: 1px solid red;
+            }
+            p{
+                border: 1px solid rgb(217, 255, 4);
+            }
+        }
+        }
+        .titlePage{
+            border: 1px solid red;
+            margin-top: 10rem;
+            margin-left: 2rem;
+            // height: 2rem;
+            color:var(--color2);
+            text-transform: uppercase;            
+        }
         #accueil{
             height: 100vh;
             background: var(--colorbackground);
@@ -110,96 +154,41 @@
                 position: relative;
 
             }
-            .titlePage{
-                margin-top: 10rem;
-                // margin-left: 2rem;
-                height: 2rem;
-                color:var(--color2);
-                text-transform: uppercase;            
-            }
             .slogan{
-                position: relative;
-                top: 10rem;
+                border: 1px solid red;
+                // position: relative;
+                top: 5rem;
                 left: 15rem;
-            }
-            .sloganAnimation1{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 5rem;
-            }
-            .letter{
-                color:var(--color2);
-            }
-            .arrow{
-                color: var(--colorTexte1);
-                position: absolute;
-                bottom: 5px;
-                left: 50%;
-                /* transform: translateX(-100%); */
-                transform:translateY(1200%) ;
-                
-            }
-            .arrow{
-                .material-icons{
-                font-size: 3rem;
-                opacity: 0;
-                color: var(--colorTexte1);
+                .sloganAnimation1{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 5rem;
                 }
-            }
+                .letter{
+                    color:var(--color2);
+                }
+            } 
         }
-        
         #presentation{
             height: 100vh;
             background: var(--colorbackground);
             text-align: center;
-
             }
-            article{
-                background: rgba(120, 120, 120, 0.25);
-                backdrop-filter: blur(5px);
-                -webkit-backdrop-filter: blur(5px);
-                height: 100%;
-                display: flex;
-                color: var(--colorblanc);
-                .titlePage{
-                    height: 2rem;
-                    left: 0%;
-                    color:var(--color2);
-                    text-transform: uppercase;
-
-                img{
-                    height:5rem;
-                    border: 1px solid red;
-                }
-                p{
-                    border: 1px solid rgb(217, 255, 4);
-                }
-            }
-        }
-    
         #competences{
             height: 100vh;
             background: var(--colorbackground);  
             text-align: center;
-            .titlePage{
-                height: 2rem;
-                left: 0%;
-                color:var(--color2);
-                text-transform: uppercase;
+            h2{
+                border: 1px solid brown;
+                color: red;
+                
             }
         }
-    
         #projets{
             height: 100vh;
             background: var(--colorbackground);
             text-align: center;
-            .titlePage{
-                height: 2rem;
-                left: 0%;
-                color:var(--color2);
-                text-transform: uppercase;
-            }
         }
     }
 }
@@ -225,4 +214,3 @@ footer{
         }
     }
 }
-

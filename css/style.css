@@ -66,8 +66,52 @@
   justify-content: center;
 }
 .container main {
+  height: 100vh;
+  width: 100vw;
   overflow-y: scroll;
   flex-grow: 1;
+}
+.container main .arrow {
+  border: 1px solid 0;
+  color: var(--colorTexte1);
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  /* transform: translateX(-100%); */
+  transform: translateY(1200%);
+}
+.container main .arrow .material-icons {
+  font-size: 3rem;
+  opacity: 0;
+  color: var(--colorTexte1);
+}
+.container main .article {
+  background: rgba(120, 120, 120, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  height: 100%;
+  display: flex;
+  color: var(--colorblanc);
+}
+.container main .article .titlePage {
+  height: 2rem;
+  left: 0%;
+  color: var(--color2);
+  text-transform: uppercase;
+}
+.container main .article .titlePage img {
+  height: 5rem;
+  border: 1px solid red;
+}
+.container main .article .titlePage p {
+  border: 1px solid rgb(217, 255, 4);
+}
+.container main .titlePage {
+  border: 1px solid red;
+  margin-top: 10rem;
+  margin-left: 2rem;
+  color: var(--color2);
+  text-transform: uppercase;
 }
 .container main #accueil {
   height: 100vh;
@@ -78,86 +122,38 @@
   color: red;
   position: relative;
 }
-.container main #accueil .titlePage {
-  margin-top: 10rem;
-  height: 2rem;
-  color: var(--color2);
-  text-transform: uppercase;
-}
 .container main #accueil .slogan {
-  position: relative;
-  top: 10rem;
+  border: 1px solid red;
+  top: 5rem;
   left: 15rem;
 }
-.container main #accueil .sloganAnimation1 {
+.container main #accueil .slogan .sloganAnimation1 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 5rem;
 }
-.container main #accueil .letter {
+.container main #accueil .slogan .letter {
   color: var(--color2);
-}
-.container main #accueil .arrow {
-  color: var(--colorTexte1);
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  /* transform: translateX(-100%); */
-  transform: translateY(1200%);
-}
-.container main #accueil .arrow .material-icons {
-  font-size: 3rem;
-  opacity: 0;
-  color: var(--colorTexte1);
 }
 .container main #presentation {
   height: 100vh;
   background: var(--colorbackground);
   text-align: center;
 }
-.container main article {
-  background: rgba(120, 120, 120, 0.25);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  height: 100%;
-  display: flex;
-  color: var(--colorblanc);
-}
-.container main article .titlePage {
-  height: 2rem;
-  left: 0%;
-  color: var(--color2);
-  text-transform: uppercase;
-}
-.container main article .titlePage img {
-  height: 5rem;
-  border: 1px solid red;
-}
-.container main article .titlePage p {
-  border: 1px solid rgb(217, 255, 4);
-}
 .container main #competences {
   height: 100vh;
   background: var(--colorbackground);
   text-align: center;
 }
-.container main #competences .titlePage {
-  height: 2rem;
-  left: 0%;
-  color: var(--color2);
-  text-transform: uppercase;
+.container main #competences h2 {
+  border: 1px solid brown;
+  color: red;
 }
 .container main #projets {
   height: 100vh;
   background: var(--colorbackground);
   text-align: center;
-}
-.container main #projets .titlePage {
-  height: 2rem;
-  left: 0%;
-  color: var(--color2);
-  text-transform: uppercase;
 }
 
 footer {
@@ -170,6 +166,9 @@ footer ul {
   list-style: none;
   align-items: center;
   flex-direction: column;
+}
+footer ul h3 {
+  text-align: center;
 }
 footer ul li a img {
   height: 2rem;
