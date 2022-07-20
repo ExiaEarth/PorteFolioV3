@@ -6,3 +6,19 @@ $white: #fff;
 $black: #000;
 
 
+#projets{
+    border: 1px solid green;
+    .containerProjet{
+    border: 1px solid rgb(34, 0, 128);
+        .projetZone{
+    border: 1px solid rgb(128, 4, 0);
+            .header{
+                .date{
+                    span{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

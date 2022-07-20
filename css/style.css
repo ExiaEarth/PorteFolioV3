@@ -1,16 +1,8 @@
-@keyframes backgroundAnima {
-  0% {
-    background-position: 50% 0%;
-  }
-  100% {
-    background-position: 50% 100%;
-  }
-}
 :root {
-  --colorbackground:black;
-  --colorblanc:white;
-  --color2:#00CCC0;
-  --colorhover:crimson;
+  --colorbackground: black;
+  --colorblanc: white;
+  --color2: #00CCC0;
+  --colorhover: crimson;
 }
 
 *, ::before, ::after {
@@ -18,22 +10,39 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .container {
   display: flex;
   height: 100vh;
   width: 100vw;
+  top: 50rem;
   background: var(--colorbackground);
+}
+.container .titlePage {
+  display: inline-flex;
+  color: var(--color2);
+  text-transform: uppercase;
+}
+.container #titlePageAccueil {
+  opacity: 1;
+}
+.container #titlePagePresentation {
+  opacity: 0;
+}
+.container #titlePageCompetence {
+  opacity: 0;
+}
+.container #titlePageProjet {
+  opacity: 0;
+}
+.container #titlePageContact {
+  opacity: 0;
 }
 .container .sidebar {
   margin-top: 15rem;
-  background: rgba(8, 76, 42, 0.87);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  border: 1px solid rgb(8, 76, 42);
   height: 50vh;
   text-transform: uppercase;
 }
@@ -50,10 +59,6 @@
   width: 100%;
   margin-top: 0;
 }
-.container .sidebar ul li :hover {
-  background: var(--colorhover);
-  color: var(--colorblanc);
-}
 .container .sidebar ul li a {
   height: 100%;
   width: 100%;
@@ -64,6 +69,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.container .sidebar ul :hover {
+  background: var(--colorhover);
+  color: var(--colorblanc);
+  width: 10vw;
 }
 .container main {
   height: 100vh;
@@ -85,47 +95,21 @@
   opacity: 0;
   color: var(--colorTexte1);
 }
-.container main .article {
-  background: rgba(120, 120, 120, 0.25);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  height: 100%;
-  display: flex;
-  color: var(--colorblanc);
-}
-.container main .article .titlePage {
-  height: 2rem;
-  left: 0%;
-  color: var(--color2);
-  text-transform: uppercase;
-}
-.container main .article .titlePage img {
-  height: 5rem;
-  border: 1px solid red;
-}
-.container main .article .titlePage p {
-  border: 1px solid rgb(217, 255, 4);
-}
-.container main .titlePage {
-  border: 1px solid red;
-  margin-top: 10rem;
-  margin-left: 2rem;
-  color: var(--color2);
-  text-transform: uppercase;
-}
 .container main #accueil {
   height: 100vh;
-  background: var(--colorbackground);
+  width: 100vw;
+  display: inline-block;
   text-transform: uppercase;
 }
 .container main #accueil h1 {
-  color: red;
+  color: var(--color2);
   position: relative;
+  opacity: 0;
 }
 .container main #accueil .slogan {
-  border: 1px solid red;
-  top: 5rem;
-  left: 15rem;
+  position: relative;
+  left: 42rem;
+  width: 30vw;
 }
 .container main #accueil .slogan .sloganAnimation1 {
   display: flex;
@@ -137,40 +121,59 @@
   color: var(--color2);
 }
 .container main #presentation {
+  border: 1px solid rgb(128, 4, 0);
   height: 100vh;
-  background: var(--colorbackground);
-  text-align: center;
+  width: 100vw;
+  display: inline-block;
+}
+.container main #presentation #myImage {
+  align-items: center;
+  margin-top: 10rem;
+  margin-right: 50rem;
+  border: 1px solid rgb(0, 128, 6);
+  height: 43vh;
+  width: 15vw;
+}
+.container main #presentation #myImage img {
+  height: 24rem;
+}
+.container main #presentation .titlePresentationPage {
+  color: #00CCC0;
+  display: inline-block;
+  margin-top: 3rem;
+  margin-left: 50rem;
+}
+.container main #presentation .textComplem {
+  display: inline-block;
+  margin-left: 80rem;
+  border: 1px solid rgb(255, 226, 3);
+  height: 10vh;
+  width: 10vw;
+  color: #00CCC0;
 }
 .container main #competences {
   height: 100vh;
-  background: var(--colorbackground);
-  text-align: center;
+  width: 100vw;
+  display: inline-block;
+  border: 1px solid rgb(128, 4, 0);
 }
-.container main #competences h2 {
+.container main #competences .textComplem {
+  display: inline-flex;
   border: 1px solid brown;
   color: red;
 }
 .container main #projets {
+  display: inline-block;
   height: 100vh;
-  background: var(--colorbackground);
-  text-align: center;
+  width: 100vw;
 }
 
-footer {
-  height: 5rem;
-  text-align: center;
+#footer {
+  height: 3vh;
+  width: 100vw;
   background-color: var(--color2);
-  display: flex;
 }
-footer ul {
-  list-style: none;
-  align-items: center;
-  flex-direction: column;
-}
-footer ul h3 {
-  text-align: center;
-}
-footer ul li a img {
+#footer li a img {
   height: 2rem;
 }
 
