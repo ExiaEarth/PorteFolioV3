@@ -9,79 +9,93 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
-.container {
+body .container {
   display: flex;
   height: 100vh;
   width: 100vw;
-  top: 50rem;
   background: var(--colorbackground);
 }
-.container .titlePage {
+body .container .titlePage {
   display: inline-flex;
   color: var(--color2);
   text-transform: uppercase;
 }
-.container #titlePageAccueil {
+body .container #titlePageAccueil {
   opacity: 1;
 }
-.container #titlePagePresentation {
+body .container #titlePagePresentation {
   opacity: 0;
 }
-.container #titlePageCompetence {
+body .container #titlePageCompetence {
   opacity: 0;
 }
-.container #titlePageProjet {
+body .container #titlePageProjet {
   opacity: 0;
 }
-.container #titlePageContact {
+body .container #titlePageContact {
   opacity: 0;
 }
-.container .sidebar {
+body .container .sidebar {
+  background-color: var(--color2);
   margin-top: 15rem;
-  border-radius: 16px;
   height: 50vh;
   text-transform: uppercase;
+  border-radius: 40px;
 }
-.container .sidebar ul {
+body .container .sidebar ul {
   height: 100%;
-  width: 3vw;
+  width: 4vw;
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-.container .sidebar ul li {
+body .container .sidebar ul li {
+  height: 100%;
+}
+body .container .sidebar ul li a {
+  border-radius: 40px;
   height: 100%;
   width: 100%;
-  margin-top: 0;
-}
-.container .sidebar ul li a {
-  height: 100%;
-  width: 100%;
-  background-color: var(--color2);
   text-decoration: none;
-  color: #333;
+  color: rgb(0, 0, 0);
   font-size: 1.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.container .sidebar ul :hover {
+body .container .sidebar ul li a .material-icons {
+  text-align: center;
+  font-size: 2.5rem;
+}
+body .container .sidebar ul li a .titleSideBar {
+  transform: translateY(-50%);
+  position: absolute;
+  left: 6.8rem;
+  color: rgb(0, 0, 0);
+  background-color: #00CCC0;
+  border-radius: 0.3rem;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+body .container .sidebar ul :hover {
+  border-radius: 40px;
   background: var(--colorhover);
   color: var(--colorblanc);
-  width: 10vw;
 }
-.container main {
+body .container .sidebar ul :hover a .titleSideBar {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(1.5rem) translateX(3.1rem);
+}
+body .container main {
   height: 100vh;
   width: 100vw;
   overflow-y: scroll;
-  flex-grow: 1;
 }
-.container main .arrow {
+body .container main .arrow {
   border: 1px solid 0;
   color: var(--colorTexte1);
   position: absolute;
@@ -90,43 +104,43 @@
   /* transform: translateX(-100%); */
   transform: translateY(1200%);
 }
-.container main .arrow .material-icons {
+body .container main .arrow .material-icons {
   font-size: 3rem;
   opacity: 0;
   color: var(--colorTexte1);
 }
-.container main #accueil {
-  height: 100vh;
-  width: 100vw;
-  display: inline-block;
+body .container main #accueil {
+  height: 100%;
+  width: 100%;
   text-transform: uppercase;
 }
-.container main #accueil h1 {
+body .container main #accueil h1 {
   color: var(--color2);
   position: relative;
   opacity: 0;
 }
-.container main #accueil .slogan {
+body .container main #accueil .slogan {
+  border: 1px solid red;
   position: relative;
   left: 42rem;
   width: 30vw;
 }
-.container main #accueil .slogan .sloganAnimation1 {
+body .container main #accueil .slogan .sloganAnimation1 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 5rem;
 }
-.container main #accueil .slogan .letter {
+body .container main #accueil .slogan .letter {
   color: var(--color2);
 }
-.container main #presentation {
+body .container main #presentation {
   border: 1px solid rgb(128, 4, 0);
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: inline-block;
 }
-.container main #presentation #myImage {
+body .container main #presentation #myImage {
   align-items: center;
   margin-top: 10rem;
   margin-right: 50rem;
@@ -134,16 +148,16 @@
   height: 43vh;
   width: 15vw;
 }
-.container main #presentation #myImage img {
+body .container main #presentation #myImage img {
   height: 24rem;
 }
-.container main #presentation .titlePresentationPage {
+body .container main #presentation .titlePresentationPage {
   color: #00CCC0;
   display: inline-block;
   margin-top: 3rem;
   margin-left: 50rem;
 }
-.container main #presentation .textComplem {
+body .container main #presentation .textComplem {
   display: inline-block;
   margin-left: 80rem;
   border: 1px solid rgb(255, 226, 3);
@@ -151,29 +165,34 @@
   width: 10vw;
   color: #00CCC0;
 }
-.container main #competences {
-  height: 100vh;
-  width: 100vw;
+body .container main #competences {
+  height: 100%;
+  width: 100%;
   display: inline-block;
   border: 1px solid rgb(128, 4, 0);
 }
-.container main #competences .textComplem {
+body .container main #competences .textComplem {
   display: inline-flex;
   border: 1px solid brown;
   color: red;
 }
-.container main #projets {
+body .container main #projets {
   display: inline-block;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
-
-#footer {
+body .container main #contact {
+  border: 1px solid yellowgreen;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+body .container main #footer {
   height: 3vh;
   width: 100vw;
   background-color: var(--color2);
 }
-#footer li a img {
+body .container main #footer li a img {
   height: 2rem;
 }
 

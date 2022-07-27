@@ -9,190 +9,211 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
     // retire le défilement horizontal
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
-
-.container {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    top: 50rem;
-    background: var(--colorbackground);
-    .titlePage{
-        display: inline-flex;
-        color: var(--color2);
-        text-transform: uppercase;
-        }
-    #titlePageAccueil{
-        opacity: 1;
-    }
-    #titlePagePresentation{
-        opacity: 0;
-    }
-    #titlePageCompetence{
-        opacity: 0;
-    }
-    #titlePageProjet{
-        opacity: 0;
-    }
-    #titlePageContact{
-        opacity: 0;
-    }
-    .sidebar {
-        margin-top: 15rem;
-        // background: rgba(8, 76, 42, 0.87);
-        border-radius: 16px;
-        // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        // backdrop-filter: blur(0px);
-        // -webkit-backdrop-filter: blur(0px);
-        // border: 1px solid rgba(8, 76, 42, 1);
-        height: 50vh;
-        text-transform: uppercase;
-        ul {
-            // padding-top: 200px;
-            height: 100%;
-            width: 3vw;
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            li {
-                height: 100%;
-                width: 100%;
-                margin-top: 0;
-                a {
-                    height: 100%;
-                    width: 100%;
-                    background-color: var(--color2);
-                    text-decoration: none;
-                    color: #333;
-                    font-size: 1.3rem;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
-            :hover {
-                background: var(--colorhover);
-                color: var(--colorblanc);
-                width: 10vw;
-            }
-        }
-    }
-    main {
+body{
+    // height: 100vh;
+    // width: 100vw;
+    .container {
+        display: flex;
         height: 100vh;
         width: 100vw;
-        overflow-y: scroll;
-        flex-grow: 1;
-
-        .arrow {
-            border: 1px solid red($color: #000000);
-            color: var(--colorTexte1);
-            position: absolute;
-            bottom: 5px;
-            left: 50%;
-            /* transform: translateX(-100%); */
-            transform: translateY(1200%);
-            .material-icons {
-                font-size: 3rem;
-                opacity: 0;
-                color: var(--colorTexte1);
-            }
-        }
-        #accueil {
-            height: 100vh;
-            width: 100vw;
-            display: inline-block;
-
-            // animation: backgroundAnima 5s ease 0s 1 normal forwards;
-            text-transform: uppercase;
-            h1 {
-                color: var(--color2);
-                position: relative;
-                opacity: 0;
-
-            }
-            .slogan {
-                position: relative;
-                left: 42rem;
-                width:30vw;
-                .sloganAnimation1 {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 5rem;
-                }
-
-                .letter {
-                    color: var(--color2);
-                }
-            }
-        }
-        #presentation {
-            border: 1px solid rgb(128, 4, 0);
-            height: 100vh;
-            width: 100vw;
-            display: inline-block;
-
-            #myImage{
-                align-items: center;
-                
-                margin-top: 10rem;
-                margin-right: 50rem;
-                border: 1px solid rgb(0, 128, 6);
-                height: 43vh;
-                width: 15vw;
-                img{
-                    height: 24rem;
-                }
-            }
-            .titlePresentationPage{
-                color: #00CCC0;
-                display: inline-block;
-                margin-top: 3rem;
-                margin-left: 50rem;
-            }
-            .textComplem{
-                display: inline-block;
-                margin-left: 80rem;
-                border: 1px solid rgb(255, 226, 3);
-                height: 10vh;
-                width: 10vw;
-                color: #00CCC0;
-            }
-        }
-        #competences {
-            height: 100vh;
-            width: 100vw;
-            display: inline-block;
-            border: 1px solid rgb(128, 4, 0);
-
-            .textComplem{
+        // top: 50rem;
+        background: var(--colorbackground);
+        .titlePage{
             display: inline-flex;
-                border: 1px solid brown;
-                color: red;
-
+            color: var(--color2);
+            text-transform: uppercase;
+            }
+        #titlePageAccueil{
+            opacity: 1;
+        }
+        #titlePagePresentation{
+            opacity: 0;
+        }
+        #titlePageCompetence{
+            opacity: 0;
+        }
+        #titlePageProjet{
+            opacity: 0;
+        }
+        #titlePageContact{
+            opacity: 0;
+        }
+        .sidebar {
+            background-color: var(--color2);
+            margin-top: 15rem;
+            height: 50vh;
+            text-transform: uppercase;
+            border-radius: 40px;
+            ul {
+                height: 100%;
+                width: 4vw;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                li {
+                    height: 100%;
+                    a {
+                        border-radius: 40px;
+                        height: 100%;
+                        width: 100%;
+                        text-decoration: none;
+                        color: rgb(0, 0, 0);
+                        font-size: 1.3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .material-icons{
+                            text-align: center;
+                            font-size: 2.5rem;
+                        }
+                        .titleSideBar{
+                            transform: translateY(-50%);
+                            position: absolute;
+                            left: 6.8rem;
+                            color: rgb(0, 0, 0);
+                            background-color: #00CCC0;
+                            // padding: 0.3rem ,0.6rem;
+                            border-radius: 0.3rem;
+                            transition: 0.5s;
+                            // box-shadow: 0 0.5rem;
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+                    }
+                }
+                :hover {
+                    border-radius: 40px;
+                    background: var(--colorhover);
+                    color: var(--colorblanc);
+                    // width: 10vw;
+                   a{
+                    .titleSideBar{
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateX(1.5rem)translateX(3.1rem);
+                    }
+                   }
+                }
             }
         }
-        #projets {
-            display: inline-block;
+        main {
             height: 100vh;
             width: 100vw;
-        }
-        
-    }
-}
-#footer{
-    height: 3vh;
-    width: 100vw;
-    background-color: var(--color2);
-    li{
-        a{
-            img{
-            height: 2rem;
+            overflow-y: scroll;
+            .arrow {
+                border: 1px solid red($color: #000000);
+                color: var(--colorTexte1);
+                position: absolute;
+                bottom: 5px;
+                left: 50%;
+                /* transform: translateX(-100%); */
+                transform: translateY(1200%);
+                .material-icons {
+                    font-size: 3rem;
+                    opacity: 0;
+                    color: var(--colorTexte1);
+                }
+            }
+            #accueil {
+                height: 100%;
+                width: 100%;
+                // display: inline-block;
+                // border: 1px solid rgb(0, 17, 255);
+                // animation: backgroundAnima 5s ease 0s 1 normal forwards;
+                text-transform: uppercase;
+                h1 {
+                    color: var(--color2);
+                    position: relative;
+                    opacity: 0;
+
+                }
+                .slogan {
+                    border: 1px solid red;
+                    position: relative;
+                    left: 42rem;
+                    width:30vw;
+                    .sloganAnimation1 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 5rem;
+                    }
+
+                    .letter {
+                        color: var(--color2);
+                    }
+                }
+            }
+            #presentation {
+                border: 1px solid rgb(128, 4, 0);
+                height: 100%;
+                width: 100%;
+                display: inline-block;
+
+                #myImage{
+                    align-items: center;
+                    margin-top: 10rem;
+                    margin-right: 50rem;
+                    border: 1px solid rgb(0, 128, 6);
+                    height: 43vh;
+                    width: 15vw;
+                    img{
+                        height: 24rem;
+                    }
+                }
+                .titlePresentationPage{
+                    color: #00CCC0;
+                    display: inline-block;
+                    margin-top: 3rem;
+                    margin-left: 50rem;
+                }
+                .textComplem{
+                    display: inline-block;
+                    margin-left: 80rem;
+                    border: 1px solid rgb(255, 226, 3);
+                    height: 10vh;
+                    width: 10vw;
+                    color: #00CCC0;
+                }
+            }
+            #competences {
+                height: 100%;
+                width: 100%;
+                display: inline-block;
+                border: 1px solid rgb(128, 4, 0);
+                .textComplem{
+                display: inline-flex;
+                    border: 1px solid brown;
+                    color: red;
+
+                }
+            }
+            #projets {
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+            }
+            #contact{
+                border: 1px solid yellowgreen;
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+            }
+            #footer{
+                height: 3vh;
+                width: 100vw;
+                background-color: var(--color2);
+                li{
+                    a{
+                        img{
+                        height: 2rem;
+                        }
+                    }
+                }
             }
         }
     }
