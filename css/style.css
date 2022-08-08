@@ -9,12 +9,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
+body {
+  height: 100vh;
+  width: 100vw;
+}
 body .container {
   display: flex;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: var(--colorbackground);
 }
 body .container .titlePage {
@@ -96,7 +102,7 @@ body .container main {
   overflow-y: scroll;
 }
 body .container main .arrow {
-  border: 1px solid 0;
+  border: 1px solid 255;
   color: var(--colorTexte1);
   position: absolute;
   bottom: 5px;
@@ -118,14 +124,17 @@ body .container main #accueil h1 {
   color: var(--color2);
   position: relative;
   opacity: 0;
+  display: flex;
+  display: inline-block;
 }
 body .container main #accueil .slogan {
-  border: 1px solid red;
   position: relative;
-  left: 42rem;
+  left: 40rem;
   width: 30vw;
+  height: 95.5vh;
 }
 body .container main #accueil .slogan .sloganAnimation1 {
+  margin-top: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,46 +144,155 @@ body .container main #accueil .slogan .letter {
   color: var(--color2);
 }
 body .container main #presentation {
-  border: 1px solid rgb(128, 4, 0);
   height: 100%;
   width: 100%;
-  display: inline-block;
+  display: flex;
+}
+body .container main #presentation .titlePresentationPage {
+  height: 4vh;
+  color: #00CCC0;
+  margin-top: 1.5rem;
+  margin-left: 50rem;
 }
 body .container main #presentation #myImage {
-  align-items: center;
   margin-top: 10rem;
-  margin-right: 50rem;
-  border: 1px solid rgb(0, 128, 6);
-  height: 43vh;
+  height: 42.1vh;
   width: 15vw;
+  transform: translateX(-40rem);
 }
 body .container main #presentation #myImage img {
   height: 24rem;
 }
-body .container main #presentation .titlePresentationPage {
-  color: #00CCC0;
-  display: inline-block;
-  margin-top: 3rem;
-  margin-left: 50rem;
-}
 body .container main #presentation .textComplem {
-  display: inline-block;
-  margin-left: 80rem;
-  border: 1px solid rgb(255, 226, 3);
-  height: 10vh;
-  width: 10vw;
-  color: #00CCC0;
+  text-align: center;
+  margin-top: 10rem;
+  float: right;
+  background-color: rgba(172, 172, 172, 0.35);
+  margin-right: 10rem;
+  height: 50vh;
+  width: 20rem;
+  color: #ffffff;
+  background: rgba(79, 78, 78, 0);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0rem);
+  border: 1px solid rgb(56, 55, 55);
 }
 body .container main #competences {
+  list-style: none;
   height: 100%;
   width: 100%;
-  display: inline-block;
-  border: 1px solid rgb(128, 4, 0);
+  text-transform: uppercase;
 }
-body .container main #competences .textComplem {
-  display: inline-flex;
-  border: 1px solid brown;
-  color: red;
+body .container main #competences .titleCompetencePage {
+  color: #00CCC0;
+  top: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+body .container main #competences #containeurComp {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+body .container main #competences #containeurComp .listFront {
+  height: 100rem;
+  width: 30rem;
+  transform: translateX(17rem);
+  background: #4e4f4f;
+}
+body .container main #competences #containeurComp .listFront .titleList {
+  height: 1.5%;
+  width: 100%;
+  color: #00CCC0;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+body .container main #competences #containeurComp .listFront .listTripleList {
+  width: 60%;
+  height: 45%;
+  border: 1px solid rgb(191, 1, 249);
+  color: #00CCC0;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  display: flex;
+}
+body .container main #competences #containeurComp .listFront .listTripleList ul {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body .container main #competences #containeurComp .listFront .listTripleList ul li {
+  border: 1px solid rgb(249, 1, 1);
+  height: 100%;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+}
+body .container main #competences #containeurComp .listFront .listTripleList ul :hover {
+  color: rgb(251, 251, 251);
+  background: #00CCC0;
+}
+body .container main #competences #containeurComp .listBack {
+  border: 1px solid rgb(8, 238, 226);
+  height: 100rem;
+  width: 30rem;
+  transform: translateX(17rem);
+}
+body .container main #competences #containeurComp .listBack .listBackEnd .titleList {
+  height: 1.5%;
+  width: 100%;
+  border: 1px solid rgb(249, 1, 1);
+  color: #00CCC0;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+body .container main #competences #containeurComp .listBack .listBackEnd .listTripleList {
+  width: 60%;
+  height: 45rem;
+  border: 1px solid rgb(191, 1, 249);
+  color: #00CCC0;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+body .container main #competences #containeurComp .listBack .listBackEnd .listTripleList ul {
+  margin-top: 1rem;
+}
+body .container main #competences #containeurComp .listBack .listBackEnd .listTripleList ul li {
+  border: 1px solid rgb(249, 1, 1);
+}
+body .container main #competences #containeurComp .listAutre {
+  border: 1px solid rgb(1, 104, 1);
+  height: 100rem;
+  width: 30rem;
+  transform: translateX(17rem);
+}
+body .container main #competences #containeurComp .listAutre .titleList {
+  height: 1.5%;
+  width: 100%;
+  border: 1px solid rgb(249, 1, 1);
+  color: #00CCC0;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+body .container main #competences #containeurComp .listAutre .listTripleList {
+  width: 60%;
+  height: 45rem;
+  border: 1px solid rgb(191, 1, 249);
+  color: #00CCC0;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+body .container main #competences #containeurComp .listAutre .listTripleList ul {
+  margin-top: 1rem;
+}
+body .container main #competences #containeurComp .listAutre .listTripleList ul li {
+  border: 1px solid rgb(249, 1, 1);
 }
 body .container main #projets {
   display: inline-block;

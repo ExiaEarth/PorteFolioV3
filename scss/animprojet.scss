@@ -7,18 +7,44 @@ $black: #000;
 
 
 #projets{
-    border: 1px solid green;
     .containerProjet{
-    border: 1px solid rgb(34, 0, 128);
+        border: 1px solid rgb(222, 225, 25);
+        width: 100%;
+        height: 100vh;
+        display: flex;
         .projetZone{
-    border: 1px solid rgb(128, 4, 0);
+            margin-top: 5rem;
+            margin-left: 17rem;
+            width: 10%;
+            height: 40%;
+            background: rgba(61, 115, 168, 1);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(61, 115, 168, 1);
             .header{
-                .date{
-                    span{
-                        text-align: center;
+                text-align: justify;
+                color: red;
+            }
+            .data1{
+                .contenant{
+                    .titleprojet{
+                        a{
+                            color: #000;
+                        }
+                    }
+                    .text{
+                        color: red;
                     }
                 }
-            }
+                span{
+                display: inline;
+                justify-content: space-around;
+                }
+                opacity: 1;
+                // visibility: hidden;
+            } 
         }
     }
 }
