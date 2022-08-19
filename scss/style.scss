@@ -9,19 +9,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    // scroll-behavior: smooth;
-    // retire le défilement horizontal
     overflow-x: hidden;
     overflow-y: hidden;
 }
 body{
+    
     height: 100vh;
     width: 100vw;
     .container {
         display: flex;
         height: 100vh;
         width: 100%;
-        // top: 50rem;
         background: var(--colorbackground);
         .titlePage{
             display: inline-flex;
@@ -105,26 +103,9 @@ body{
             height: 100vh;
             width: 100vw;
             overflow-y: scroll;
-            .arrow {
-                border: 1px solid red($color: #ffffff);
-                color: var(--colorTexte1);
-                position: absolute;
-                bottom: 5px;
-                left: 50%;
-                /* transform: translateX(-100%); */
-                transform: translateY(1200%);
-                .material-icons {
-                    font-size: 3rem;
-                    opacity: 0;
-                    color: var(--colorTexte1);
-                }
-            }
             #accueil {
                 height: 100%;
                 width: 100%;
-                // display: inline-block;
-                // border: 1px solid rgb(0, 17, 255);
-                // animation: backgroundAnima 5s ease 0s 1 normal forwards;
                 text-transform: uppercase;
                 h1 {
                     color: var(--color2);
@@ -161,18 +142,13 @@ body{
                 .titlePresentationPage{
                     height: 4vh;
                     color: #00CCC0;
-                    // display: inline-flex;
-                    // display: flex;
-                    // justify-content: center;
                     margin-top: 1.5rem;
                     margin-left: 50rem;
-                    // position: relative;
-                    // display: inline;
-
                 }
                 #myImage{
+                    border-radius: 50% 50% 50% 50%;;
                     margin-top: 10rem;
-                    height: 42.1vh;
+                    height: 40vh;
                     width: 15vw;
                     transform: translateX(-40rem);
                     img{
@@ -202,46 +178,43 @@ body{
                 list-style: none;
                 height: 100%;
                 width: 100%;
-                // display: inline-block;
-                // border: 1px solid rgb(128, 4, 0);
                 text-transform: uppercase;
                 .titleCompetencePage{
-                    // border: 1px solid blue;
                     color: #00CCC0;
-                    top: 1.5rem;
+                    margin-top: 1rem;
                     text-align: center;
                     font-size: 1rem;
-
                 }
                 #containeurComp{
-                    // border: 1px solid rgb(255, 10, 243);
+                    margin-top: 2rem;
                     height: 100%;
                     width: 100%;
                     display: flex;
                     .listFront{
-                        // border: 1px solid rgb(233, 249, 1);
-                        height: 100rem;
+                        margin-top: 0.65rem;
+                        height: 75rem;
                         width: 30rem;
                         transform: translateX(17rem);
-                        background: #4e4f4f;
-
+                        background: var(--colorbackground);
                         .titleList{
                             height: 1.5%;
                             width: 100%;
-                            // border: 1px solid rgb(249, 1, 1);
                             color: #00CCC0;
                             text-align: center;
                             margin-top: 0.5rem;
-
                         }
                         .listTripleList{
                             width: 60%;
                             height: 45%;
-                            border: 1px solid rgb(191, 1, 249);
-                            color: #00CCC0;
+                            // border: 1px solid rgb(176, 10, 247);
+                            color: var(--colorbackground);
                             margin-left: 5rem;
                             margin-top: 2rem;
                             display:flex ;
+                            border-radius: 20px;
+                            background: var(--color2);
+                            box-shadow:  5px 5px 8px #6c6c6c,
+                            -5px -5px 8px #ffffff;
                             ul{
                                 margin-top: 1rem;
                                 width: 100%;
@@ -249,7 +222,7 @@ body{
                                 flex-direction: column;
 
                                 li{
-                                    border: 1px solid rgb(249, 1, 1);
+                                    // border: 1px solid rgb(249, 1, 1);
                                     height: 100%;
                                     font-size: 2rem;
                                     margin-top: 1rem;
@@ -259,70 +232,105 @@ body{
                                     list-style: none;
                                     
                                 }
-                                :hover{color: rgb(251, 251, 251);
-                                background: #00CCC0;
-
+                                :hover{
+                                color: rgb(251, 251, 251);
+                                background: var(--colorhover);
                                 }
                             }
                         }
                     }
                     .listBack{
-                        border: 1px solid rgb(8, 238, 226);
-                        height: 100rem;
+                        height: 40rem;
                         width: 30rem;
                         transform: translateX(17rem);
+                        background: var(--colorbackground);
                         .listBackEnd{
                             .titleList{
                                 height: 1.5%;
                                 width: 100%;
-                                border: 1px solid rgb(249, 1, 1);
+                                // border: 1px solid rgb(249, 1, 1);
                                 color: #00CCC0;
                                 text-align: center;
                                 margin-top: 0.5rem;
+    
                             }
                             .listTripleList{
                                 width: 60%;
-                                height: 45rem;
-                                border: 1px solid rgb(191, 1, 249);
-                                color: #00CCC0;
+                                height: 60%;
+                                // border: 1px solid rgb(191, 1, 249);
+                                color: var(--colorbackground);
                                 margin-left: 5rem;
                                 margin-top: 2rem;
+                                display:flex ;
+                                border-radius: 1.25rem;
+                                background: var(--color2);
+                                box-shadow:  5px 5px 8px #6c6c6c,-5px -5px 8px #ffffff;
                                 ul{
                                     margin-top: 1rem;
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+    
                                     li{
-                                        border: 1px solid rgb(249, 1, 1);
-        
+                                        // border: 1px solid rgb(249, 1, 1);
+                                        height: 100%;
+                                        font-size: 2rem;
+                                        margin-top: 1rem;
+                                        margin-bottom: 1rem;
+                                        justify-content: center;
+                                        text-align: center;
+                                        list-style: none;
+                                        
+                                    }
+                                    :hover{
+                                        color: rgb(251, 251, 251);
+                                        background: var(--colorhover);
+    
                                     }
                                 }
                             }
                         }
                     }
                     .listAutre{
-                        border: 1px solid rgb(1, 104, 1);
-                        height: 100rem;
+                        height: 60rem;
                         width: 30rem;
                         transform: translateX(17rem);
+                        background: var(--colorbackground);
                         .titleList{
                             height: 1.5%;
                             width: 100%;
-                            border: 1px solid rgb(249, 1, 1);
                             color: #00CCC0;
                             text-align: center;
                             margin-top: 0.5rem;
                         }
                         .listTripleList{
                             width: 60%;
-                            height: 45rem;
-                            border: 1px solid rgb(191, 1, 249);
-                            color: #00CCC0;
+                            height: 60%;
+                            color: var(--colorbackground);
                             margin-left: 5rem;
                             margin-top: 2rem;
-
+                            display:flex ;
+                            border-radius: 1.5rem;
+                            background: var(--color2);
+                            box-shadow:  5px 5px 8px #6c6c6c,-5px -5px 8px #ffffff;
                             ul{
                                 margin-top: 1rem;
-                                li{
-                                border: 1px solid rgb(249, 1, 1);
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
 
+                                li{
+                                    height: 100%;
+                                    font-size: 2rem;
+                                    margin-top: 1rem;
+                                    margin-bottom: 1rem;
+                                    justify-content: center;
+                                    text-align: center;
+                                    list-style: none;
+                                }
+                                :hover{
+                                    color: rgb(251, 251, 251);
+                                    background: var(--colorhover);
                                 }
                             }
                         }
@@ -330,13 +338,11 @@ body{
                 }
             }
             #projets {
-                display: inline-block;
                 height: 100%;
                 width: 100%;
-
             }
             #contact{
-                border: 1px solid yellowgreen;
+                // border: 1px solid yellowgreen;
                 display: inline-block;
                 height: 100%;
                 width: 100%;

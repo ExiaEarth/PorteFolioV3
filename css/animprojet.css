@@ -1,12 +1,32 @@
+:root {
+  --colorbackground: black;
+  --colorblanc: white;
+  --color2: #00CCC0;
+  --colorhover: crimson;
+}
+
+#projets .titleProjetPage {
+  color: var(--color2);
+  text-align: center;
+}
 #projets .containerProjet {
-  border: 1px solid rgb(222, 225, 25);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
 }
-#projets .containerProjet .projetZone {
+#projets .containerProjet #zoneDifProjet {
+  margin-top: 0.5rem;
+  margin-left: 15rem;
+  margin-right: 0.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#projets .containerProjet #zoneDifProjet .projet1 {
   margin-top: 5rem;
-  margin-left: 17rem;
+  margin-left: 1rem;
   width: 10%;
   height: 40%;
   background: rgb(61, 115, 168);
@@ -16,22 +36,25 @@
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgb(61, 115, 168);
 }
-#projets .containerProjet .projetZone .header {
+#projets .containerProjet #zoneDifProjet .projet1 .header {
   text-align: justify;
-  color: red;
+  color: rgb(255, 255, 255);
 }
-#projets .containerProjet .projetZone .data1 {
+#projets .containerProjet #zoneDifProjet .projet1 .data1 {
   opacity: 1;
 }
-#projets .containerProjet .projetZone .data1 .contenant .titleprojet a {
-  color: #000;
+#projets .containerProjet #zoneDifProjet .projet1 .data1 .contenant .titleprojet a {
+  color: rgb(12, 163, 168);
 }
-#projets .containerProjet .projetZone .data1 .contenant .text {
-  color: red;
+#projets .containerProjet #zoneDifProjet .projet1 .data1 .contenant .text {
+  color: rgb(0, 0, 0);
 }
-#projets .containerProjet .projetZone .data1 span {
+#projets .containerProjet #zoneDifProjet .projet1 .data1 span {
   display: inline;
   justify-content: space-around;
+}
+#projets .containerProjet #zoneDifProjet #premSite {
+  background-image: url("/image/img_projet_premier.png");
 }
 
 /*# sourceMappingURL=animprojet.css.map */
