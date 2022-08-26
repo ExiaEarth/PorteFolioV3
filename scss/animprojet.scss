@@ -12,10 +12,10 @@ $black: #000;
 }
 
 #projets{
-    // border: 1px solid rgb(225, 25, 25);
+    border: 1px solid rgb(121, 4, 4);
     .titleProjetPage{
         color: var(--color2);
-        // border: 1px solid rgb(222, 225, 25);
+        border: 1px solid rgb(222, 225, 25);
         text-align: center;
         // display: flex;
 
@@ -24,7 +24,7 @@ $black: #000;
         width: 100%;
         height: 100%;
         display: flex;
-        // border: 1px solid rgb(231, 231,231);
+        border: 1px solid rgb(231, 231,231);
         #zoneDifProjet{
             margin-top: 0.5rem;
             margin-left: 15rem;
@@ -40,8 +40,8 @@ $black: #000;
                 margin-top: 5rem;
                 margin-left: 1rem;
                 width: 10%;
-                height: 40%;
-                background: rgba(61, 115, 168, 1);
+                height: 30%;
+                // background: rgba(61, 115, 168, 1);
                 border-radius: 16px;
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(20px);
@@ -73,6 +73,10 @@ $black: #000;
             #premSite{
                 background-image:url('/image/img_projet_premier.png') ;
                 // background-position:;
+            }
+            #secSite{
+                background-image:url('/image/img_projet_second.png') ;
+                background-position: top;
             }
             
         }

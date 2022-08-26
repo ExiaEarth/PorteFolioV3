@@ -56,5 +56,9 @@
 #projets .containerProjet #zoneDifProjet #premSite {
   background-image: url("/image/img_projet_premier.png");
 }
+#projets .containerProjet #zoneDifProjet #secSite {
+  background-image: url("/image/img_projet_second.png");
+  background-position: top;
+}
 
 /*# sourceMappingURL=animprojet.css.map */

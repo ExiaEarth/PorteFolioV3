@@ -167,152 +167,79 @@ body .container main #presentation .textComplem {
   border: 1px solid rgb(56, 55, 55);
 }
 body .container main #competences {
-  list-style: none;
   height: 100%;
   width: 100%;
   text-transform: uppercase;
 }
 body .container main #competences .titleCompetencePage {
   color: #00CCC0;
-  margin-top: 1rem;
   text-align: center;
   font-size: 1rem;
 }
 body .container main #competences #containeurComp {
-  margin-top: 2rem;
-  height: 100%;
+  margin-top: 0.2rem;
+  height: 96.6%;
   width: 100%;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-body .container main #competences #containeurComp .listFront {
-  margin-top: 0.65rem;
-  height: 75rem;
+body .container main #competences #containeurComp .listcompetence {
+  height: 55rem;
   width: 30rem;
-  transform: translateX(17rem);
-  background: var(--colorbackground);
+  transform: translateX(5rem);
 }
-body .container main #competences #containeurComp .listFront .titleList {
-  height: 1.5%;
+body .container main #competences #containeurComp .listcompetence .titleList {
+  height: 3%;
   width: 100%;
   color: #00CCC0;
   text-align: center;
   margin-top: 0.5rem;
 }
-body .container main #competences #containeurComp .listFront .listTripleList {
+body .container main #competences #containeurComp .listcompetence .listTripleList {
   width: 60%;
-  height: 45%;
-  color: var(--colorbackground);
+  height: 75%;
   margin-left: 5rem;
-  margin-top: 2rem;
-  display: flex;
+  margin-top: 1rem;
   border-radius: 20px;
   background: var(--color2);
-  box-shadow: 5px 5px 8px #6c6c6c, -5px -5px 8px #ffffff;
+  box-shadow: 5px 5px 8px #dc1b1b;
 }
-body .container main #competences #containeurComp .listFront .listTripleList ul {
-  margin-top: 1rem;
+body .container main #competences #containeurComp .listcompetence .listTripleList ul {
+  margin-top: 0.1rem;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
 }
-body .container main #competences #containeurComp .listFront .listTripleList ul li {
-  height: 100%;
+body .container main #competences #containeurComp .listcompetence .listTripleList ul li {
+  height: 50%;
   font-size: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   justify-content: center;
   text-align: center;
   list-style: none;
 }
-body .container main #competences #containeurComp .listFront .listTripleList ul :hover {
+body .container main #competences #containeurComp .listcompetence .listTripleList ul :hover {
   color: rgb(251, 251, 251);
   background: var(--colorhover);
 }
-body .container main #competences #containeurComp .listBack {
-  height: 40rem;
-  width: 30rem;
-  transform: translateX(17rem);
-  background: var(--colorbackground);
-}
-body .container main #competences #containeurComp .listBack .listBackEnd .titleList {
-  height: 1.5%;
-  width: 100%;
-  color: #00CCC0;
-  text-align: center;
-  margin-top: 0.5rem;
-}
-body .container main #competences #containeurComp .listBack .listBackEnd .listTripleList {
-  width: 60%;
-  height: 60%;
-  color: var(--colorbackground);
-  margin-left: 5rem;
-  margin-top: 2rem;
-  display: flex;
-  border-radius: 1.25rem;
-  background: var(--color2);
-  box-shadow: 5px 5px 8px #6c6c6c, -5px -5px 8px #ffffff;
-}
-body .container main #competences #containeurComp .listBack .listBackEnd .listTripleList ul {
-  margin-top: 1rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-body .container main #competences #containeurComp .listBack .listBackEnd .listTripleList ul li {
+body .container main #competences #projets {
   height: 100%;
-  font-size: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  justify-content: center;
-  text-align: center;
-  list-style: none;
-}
-body .container main #competences #containeurComp .listBack .listBackEnd .listTripleList ul :hover {
-  color: rgb(251, 251, 251);
-  background: var(--colorhover);
-}
-body .container main #competences #containeurComp .listAutre {
-  height: 60rem;
-  width: 30rem;
-  transform: translateX(17rem);
-  background: var(--colorbackground);
-}
-body .container main #competences #containeurComp .listAutre .titleList {
-  height: 1.5%;
   width: 100%;
-  color: #00CCC0;
-  text-align: center;
-  margin-top: 0.5rem;
 }
-body .container main #competences #containeurComp .listAutre .listTripleList {
-  width: 60%;
-  height: 60%;
-  color: var(--colorbackground);
-  margin-left: 5rem;
-  margin-top: 2rem;
-  display: flex;
-  border-radius: 1.5rem;
-  background: var(--color2);
-  box-shadow: 5px 5px 8px #6c6c6c, -5px -5px 8px #ffffff;
-}
-body .container main #competences #containeurComp .listAutre .listTripleList ul {
-  margin-top: 1rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-body .container main #competences #containeurComp .listAutre .listTripleList ul li {
+body .container main #competences #contact {
+  display: inline-block;
   height: 100%;
-  font-size: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  justify-content: center;
-  text-align: center;
-  list-style: none;
+  width: 100%;
 }
-body .container main #competences #containeurComp .listAutre .listTripleList ul :hover {
-  color: rgb(251, 251, 251);
-  background: var(--colorhover);
+body .container main #competences #footer {
+  height: 3vh;
+  width: 100vw;
+  background-color: var(--color2);
+}
+body .container main #competences #footer li a img {
+  height: 2rem;
 }
 body .container main #projets {
   height: 100%;

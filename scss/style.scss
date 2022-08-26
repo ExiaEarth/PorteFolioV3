@@ -12,10 +12,21 @@
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+// @media (max-width: 37.438rem) {
+//     body{
+//         // height:100% ;
+//         // width: 100%;
+//         background-color: #ffffff;
+//     }
+// }
 body{
     
     height: 100vh;
     width: 100vw;
+    @media (max-width: 599px) {
+    
+    }
     .container {
         display: flex;
         height: 100vh;
@@ -175,29 +186,28 @@ body{
                 }
             }
             #competences {
-                list-style: none;
                 height: 100%;
                 width: 100%;
                 text-transform: uppercase;
                 .titleCompetencePage{
                     color: #00CCC0;
-                    margin-top: 1rem;
                     text-align: center;
                     font-size: 1rem;
+                    // border: 1px solid rgb(10, 239, 247);
                 }
                 #containeurComp{
-                    margin-top: 2rem;
-                    height: 100%;
+                    margin-top: 0.2rem;
+                    height: 96.6%;
                     width: 100%;
                     display: flex;
-                    .listFront{
-                        margin-top: 0.65rem;
-                        height: 75rem;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    .listcompetence{
+                        height: 55rem;
                         width: 30rem;
-                        transform: translateX(17rem);
-                        background: var(--colorbackground);
+                        transform: translateX(5rem);
                         .titleList{
-                            height: 1.5%;
+                            height: 3%;
                             width: 100%;
                             color: #00CCC0;
                             text-align: center;
@@ -205,31 +215,29 @@ body{
                         }
                         .listTripleList{
                             width: 60%;
-                            height: 45%;
-                            // border: 1px solid rgb(176, 10, 247);
-                            color: var(--colorbackground);
+                            height: 75%;
                             margin-left: 5rem;
-                            margin-top: 2rem;
-                            display:flex ;
+                            margin-top: 1rem;
                             border-radius: 20px;
                             background: var(--color2);
-                            box-shadow:  5px 5px 8px #6c6c6c,
-                            -5px -5px 8px #ffffff;
+                            box-shadow:  5px 5px 8px #dc1b1b;
                             ul{
-                                margin-top: 1rem;
+                                margin-top: 0.1rem;
                                 width: 100%;
+                                height: 100%;
                                 display: flex;
                                 flex-direction: column;
-
+                                border-radius: 20px;
                                 li{
                                     // border: 1px solid rgb(249, 1, 1);
-                                    height: 100%;
+                                    height: 50%;
                                     font-size: 2rem;
-                                    margin-top: 1rem;
-                                    margin-bottom: 1rem;
+                                    // margin-top: 1rem;
+                                    // margin-bottom: 1rem;
                                     justify-content: center;
                                     text-align: center;
                                     list-style: none;
+                                    // flex-wrap: wrap;
                                     
                                 }
                                 :hover{
@@ -239,107 +247,34 @@ body{
                             }
                         }
                     }
-                    .listBack{
-                        height: 40rem;
-                        width: 30rem;
-                        transform: translateX(17rem);
-                        background: var(--colorbackground);
-                        .listBackEnd{
-                            .titleList{
-                                height: 1.5%;
-                                width: 100%;
-                                // border: 1px solid rgb(249, 1, 1);
-                                color: #00CCC0;
-                                text-align: center;
-                                margin-top: 0.5rem;
-    
-                            }
-                            .listTripleList{
-                                width: 60%;
-                                height: 60%;
-                                // border: 1px solid rgb(191, 1, 249);
-                                color: var(--colorbackground);
-                                margin-left: 5rem;
-                                margin-top: 2rem;
-                                display:flex ;
-                                border-radius: 1.25rem;
-                                background: var(--color2);
-                                box-shadow:  5px 5px 8px #6c6c6c,-5px -5px 8px #ffffff;
-                                ul{
-                                    margin-top: 1rem;
-                                    width: 100%;
-                                    display: flex;
-                                    flex-direction: column;
-    
-                                    li{
-                                        // border: 1px solid rgb(249, 1, 1);
-                                        height: 100%;
-                                        font-size: 2rem;
-                                        margin-top: 1rem;
-                                        margin-bottom: 1rem;
-                                        justify-content: center;
-                                        text-align: center;
-                                        list-style: none;
-                                        
-                                    }
-                                    :hover{
-                                        color: rgb(251, 251, 251);
-                                        background: var(--colorhover);
-    
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .listAutre{
-                        height: 60rem;
-                        width: 30rem;
-                        transform: translateX(17rem);
-                        background: var(--colorbackground);
-                        .titleList{
-                            height: 1.5%;
-                            width: 100%;
-                            color: #00CCC0;
-                            text-align: center;
-                            margin-top: 0.5rem;
-                        }
-                        .listTripleList{
-                            width: 60%;
-                            height: 60%;
-                            color: var(--colorbackground);
-                            margin-left: 5rem;
-                            margin-top: 2rem;
-                            display:flex ;
-                            border-radius: 1.5rem;
-                            background: var(--color2);
-                            box-shadow:  5px 5px 8px #6c6c6c,-5px -5px 8px #ffffff;
-                            ul{
-                                margin-top: 1rem;
-                                width: 100%;
-                                display: flex;
-                                flex-direction: column;
-
-                                li{
-                                    height: 100%;
-                                    font-size: 2rem;
-                                    margin-top: 1rem;
-                                    margin-bottom: 1rem;
-                                    justify-content: center;
-                                    text-align: center;
-                                    list-style: none;
-                                }
-                                :hover{
-                                    color: rgb(251, 251, 251);
-                                    background: var(--colorhover);
-                                }
-                            }
+                }
+            #projets {
+                height: 100%;
+                width: 100%;
+            }
+            #contact{
+                // border: 1px solid yellowgreen;
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+            }
+            #footer{
+                height: 3vh;
+                width: 100vw;
+                background-color: var(--color2);
+                li{
+                    a{
+                        img{
+                        height: 2rem;
                         }
                     }
                 }
             }
+            }
             #projets {
                 height: 100%;
                 width: 100%;
+                
             }
             #contact{
                 // border: 1px solid yellowgreen;
