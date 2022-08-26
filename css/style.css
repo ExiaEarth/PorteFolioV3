@@ -40,9 +40,6 @@ body .container #titlePageCompetence {
 body .container #titlePageProjet {
   opacity: 0;
 }
-body .container #titlePageContact {
-  opacity: 0;
-}
 body .container .sidebar {
   background-color: var(--color2);
   margin-top: 15rem;
@@ -224,23 +221,6 @@ body .container main #competences #containeurComp .listcompetence .listTripleLis
   color: rgb(251, 251, 251);
   background: var(--colorhover);
 }
-body .container main #competences #projets {
-  height: 100%;
-  width: 100%;
-}
-body .container main #competences #contact {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-}
-body .container main #competences #footer {
-  height: 3vh;
-  width: 100vw;
-  background-color: var(--color2);
-}
-body .container main #competences #footer li a img {
-  height: 2rem;
-}
 body .container main #projets {
   height: 100%;
   width: 100%;
@@ -249,6 +229,69 @@ body .container main #contact {
   display: inline-block;
   height: 100%;
   width: 100%;
+}
+body .container main #contact .titleContact {
+  color: var(--color2);
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+body .container main #contact .containerContact {
+  border: 1px solid red;
+  height: 85.3%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body .container main #contact .containerContact .formulaireCont {
+  height: 70%;
+  width: 25%;
+  color: #ffffff;
+  margin-top: 10rem;
+  margin-right: 1rem;
+  border-radius: 20px;
+  background: var(--color2);
+  box-shadow: 5px 5px 8px #dc1b1b;
+}
+body .container main #contact .containerContact .formulaireCont form {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 25px;
+}
+body .container main #contact .containerContact .infoCont {
+  border: 1px solid rgb(251, 255, 0);
+  height: 100%;
+  width: 25%;
+  color: #00CCC0;
+}
+body .container main #contact legend {
+  font-size: 1.4em;
+  padding: 0.3rem;
+  font-weight: 100;
+  color: rgb(0, 0, 0);
+}
+body .container main #contact label {
+  color: rgb(3, 2, 2);
+}
+body .container main #contact input[type=submit] {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 1rem;
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+body .container main #contact input[type=submit] :hover {
+  background-color: rgb(13, 114, 22);
+  width: 100%;
+  padding: 15px 0;
+  border: 1px solid #214567;
+  color: rgb(225, 225, 225);
+  font-size: 1.2em;
+  font-weight: lighter;
 }
 body .container main #footer {
   height: 3vh;

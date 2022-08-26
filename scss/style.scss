@@ -49,9 +49,7 @@ body{
         #titlePageProjet{
             opacity: 0;
         }
-        #titlePageContact{
-            opacity: 0;
-        }
+
         .sidebar {
             background-color: var(--color2);
             margin-top: 15rem;
@@ -229,16 +227,11 @@ body{
                                 flex-direction: column;
                                 border-radius: 20px;
                                 li{
-                                    // border: 1px solid rgb(249, 1, 1);
                                     height: 50%;
                                     font-size: 2rem;
-                                    // margin-top: 1rem;
-                                    // margin-bottom: 1rem;
                                     justify-content: center;
                                     text-align: center;
                                     list-style: none;
-                                    // flex-wrap: wrap;
-                                    
                                 }
                                 :hover{
                                 color: rgb(251, 251, 251);
@@ -248,39 +241,86 @@ body{
                         }
                     }
                 }
+            }
             #projets {
                 height: 100%;
                 width: 100%;
             }
             #contact{
-                // border: 1px solid yellowgreen;
+                // border: 1px solid rgb(3, 226, 230);
                 display: inline-block;
                 height: 100%;
                 width: 100%;
-            }
-            #footer{
-                height: 3vh;
-                width: 100vw;
-                background-color: var(--color2);
-                li{
-                    a{
-                        img{
-                        height: 2rem;
+                .titleContact{
+                    // border: 1px solid rgb(230, 222, 3);
+                    color: var(--color2);
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin-top: 5rem;
+                    font-size: 2rem;
+                }
+                .containerContact{
+                    border: 1px solid red;
+                    height: 85.3%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    
+                    .formulaireCont{
+                        // border: 1px solid rgb(0, 234, 255);
+                        height: 70%;
+                        width: 25%;
+                        color: #ffffff;
+                        margin-top: 10rem;
+                        margin-right: 1rem;
+                        border-radius: 20px;
+                        background: var(--color2);
+                        box-shadow:  5px 5px 8px #dc1b1b;
+                        form{
+                            width: 100%;
+                            height: 100%;
+                            margin: 0 auto;
+                            padding: 25px;
                         }
                     }
+                    .infoCont{
+                        border: 1px solid rgb(251, 255, 0);
+                        height: 100%;
+                        width: 25%;
+                        color: #00CCC0;
+                    }
+
                 }
-            }
-            }
-            #projets {
-                height: 100%;
-                width: 100%;
+                legend{
+                    font-size: 1.4em;
+                    padding: 0.3rem;
+                    font-weight: 100;
+                    color: rgb(0, 0, 0);
+                }
+                label{
+                    color:  rgb(3, 2, 2);
+                    // font-weight: 400;
+                }
+                input[type="submit"]{
+                    background-color:rgb(255, 255, 255);
+                    width: 100%;
+                    padding: 1rem ;
+                    color: rgb(0, 0, 0);
+                    font-size: 1.2em;
+                    font-weight: lighter;
+                    :hover{
+                        background-color:rgb(13, 114, 22);
+                        width: 100%;
+                        padding: 15px 0;
+                        border: 1px solid #214567;
+                        color: rgb(225, 225, 225);
+                        font-size: 1.2em;
+                        font-weight: lighter;
+                        
+                    }
+                }
                 
-            }
-            #contact{
-                // border: 1px solid yellowgreen;
-                display: inline-block;
-                height: 100%;
-                width: 100%;
             }
             #footer{
                 height: 3vh;

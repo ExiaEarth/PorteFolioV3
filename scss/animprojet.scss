@@ -12,41 +12,35 @@ $black: #000;
 }
 
 #projets{
-    border: 1px solid rgb(121, 4, 4);
     .titleProjetPage{
         color: var(--color2);
-        border: 1px solid rgb(222, 225, 25);
         text-align: center;
-        // display: flex;
 
     }
     .containerProjet{
         width: 100%;
         height: 100%;
         display: flex;
-        border: 1px solid rgb(231, 231,231);
+        // border: 1px solid rgb(231, 231,231);
         #zoneDifProjet{
-            margin-top: 0.5rem;
-            margin-left: 15rem;
+            background-color: rgba(184, 184, 184, 0.061);
+            margin-left: 17rem;
             margin-right: 0.5rem;
             margin-bottom: 2rem;
-            // border: 1px solid rgb(225, 25, 25);
             width: 100%;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             .projet1{
-                // display: flex;
                 margin-top: 5rem;
-                margin-left: 1rem;
-                width: 10%;
-                height: 30%;
-                // background: rgba(61, 115, 168, 1);
+                margin-left: 2rem;
+                width: 13.5%;
+                height: 50%;
                 border-radius: 16px;
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(20px);
                 -webkit-backdrop-filter: blur(20px);
-                border: 1px solid rgba(61, 115, 168, 1);
+                box-shadow:  5px 5px 8px #dc1b1b;
                 .header{
                     text-align: justify;
                     color: rgb(255, 255, 255);
@@ -66,17 +60,19 @@ $black: #000;
                     display: inline;
                     justify-content: space-around;
                     }
-                    opacity: 1;
-                    // visibility: hidden;
-                } 
+                }
             }
             #premSite{
+                // text-align: center;
+                display: block;
+                background-position: center;
                 background-image:url('/image/img_projet_premier.png') ;
                 // background-position:;
             }
             #secSite{
                 background-image:url('/image/img_projet_second.png') ;
                 background-position: top;
+                // background-position: center;
             }
             
         }

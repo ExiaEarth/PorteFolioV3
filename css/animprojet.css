@@ -15,8 +15,8 @@
   display: flex;
 }
 #projets .containerProjet #zoneDifProjet {
-  margin-top: 0.5rem;
-  margin-left: 15rem;
+  background-color: rgba(184, 184, 184, 0.061);
+  margin-left: 17rem;
   margin-right: 0.5rem;
   margin-bottom: 2rem;
   width: 100%;
@@ -26,22 +26,18 @@
 }
 #projets .containerProjet #zoneDifProjet .projet1 {
   margin-top: 5rem;
-  margin-left: 1rem;
-  width: 10%;
-  height: 40%;
-  background: rgb(61, 115, 168);
+  margin-left: 2rem;
+  width: 13.5%;
+  height: 50%;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgb(61, 115, 168);
+  box-shadow: 5px 5px 8px #dc1b1b;
 }
 #projets .containerProjet #zoneDifProjet .projet1 .header {
   text-align: justify;
   color: rgb(255, 255, 255);
-}
-#projets .containerProjet #zoneDifProjet .projet1 .data1 {
-  opacity: 1;
 }
 #projets .containerProjet #zoneDifProjet .projet1 .data1 .contenant .titleprojet a {
   color: rgb(12, 163, 168);
@@ -54,6 +50,8 @@
   justify-content: space-around;
 }
 #projets .containerProjet #zoneDifProjet #premSite {
+  display: block;
+  background-position: center;
   background-image: url("/image/img_projet_premier.png");
 }
 #projets .containerProjet #zoneDifProjet #secSite {
