@@ -247,7 +247,6 @@ body{
                 width: 100%;
             }
             #contact{
-                // border: 1px solid rgb(3, 226, 230);
                 display: inline-block;
                 height: 100%;
                 width: 100%;
@@ -260,18 +259,14 @@ body{
                     font-size: 2rem;
                 }
                 .containerContact{
-                    border: 1px solid red;
                     height: 85.3%;
                     width: 100%;
                     display: flex;
                     justify-content: center;
                     flex-wrap: wrap;
-                    
                     .formulaireCont{
-                        // border: 1px solid rgb(0, 234, 255);
                         height: 70%;
                         width: 25%;
-                        color: #ffffff;
                         margin-top: 10rem;
                         margin-right: 1rem;
                         border-radius: 20px;
@@ -283,44 +278,60 @@ body{
                             margin: 0 auto;
                             padding: 25px;
                         }
+                        legend{
+                            font-size: 1.4em;
+                            padding: 0.3rem;
+                            font-weight: 100;
+                            color: rgb(0, 0, 0);
+                        }
+                        label{
+                            color:  rgb(3, 2, 2);
+                            // font-weight: 400;
+                        }
+                        input[type="submit"]{
+                            // background-color:rgb(255, 255, 255);
+                            width: 100%;
+                            padding: 1rem ;
+                            color: rgb(0, 0, 0);
+                            font-size: 1.2em;
+                            font-weight: lighter;
+                        }
+                        :hover{
+                            input [type="submit"]{
+                                background-color:rgb(13, 114, 22);
+                                width: 100%;
+                                padding: 15px 0;
+                                border: 1px solid #214567;
+                                color: rgb(225, 225, 225);
+                                font-size: 1rem;
+                            }
+                        }
                     }
                     .infoCont{
-                        border: 1px solid rgb(251, 255, 0);
-                        height: 100%;
+                        height: 50%;
                         width: 25%;
                         color: #00CCC0;
-                    }
-
-                }
-                legend{
-                    font-size: 1.4em;
-                    padding: 0.3rem;
-                    font-weight: 100;
-                    color: rgb(0, 0, 0);
-                }
-                label{
-                    color:  rgb(3, 2, 2);
-                    // font-weight: 400;
-                }
-                input[type="submit"]{
-                    background-color:rgb(255, 255, 255);
-                    width: 100%;
-                    padding: 1rem ;
-                    color: rgb(0, 0, 0);
-                    font-size: 1.2em;
-                    font-weight: lighter;
-                    :hover{
-                        background-color:rgb(13, 114, 22);
-                        width: 100%;
-                        padding: 15px 0;
-                        border: 1px solid #214567;
-                        color: rgb(225, 225, 225);
-                        font-size: 1.2em;
-                        font-weight: lighter;
+                        margin-top: 10rem;
+                        margin-left: 1rem;
                         
+                        .socialList{
+                            li{
+                                margin-top: 2rem;
+                                margin-left: 15rem;
+                                a{
+                                    i{
+                                        color: var(--color2);
+                                        font-size: 2rem;
+                                    }
+                                    :hover{
+                                        color: var(--colorhover);
+                                    }
+                                }
+
+                            }
+                        }
                     }
                 }
-                
             }
             #footer{
                 height: 3vh;
