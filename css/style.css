@@ -156,12 +156,9 @@ body .container main #presentation .textComplem {
   height: 50vh;
   width: 20rem;
   color: #ffffff;
-  background: rgba(79, 78, 78, 0);
-  border-radius: 1rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0rem);
-  border: 1px solid rgb(56, 55, 55);
+  border-radius: 20px;
+  background: var(--color2);
+  box-shadow: 5px 5px 8px #dc1b1b;
 }
 body .container main #competences {
   height: 100%;
@@ -253,6 +250,10 @@ body .container main #contact .containerContact .formulaireCont {
   background: var(--color2);
   box-shadow: 5px 5px 8px #dc1b1b;
 }
+body .container main #contact .containerContact .formulaireCont #userMsg {
+  height: 20rem;
+  width: 25rem;
+}
 body .container main #contact .containerContact .formulaireCont form {
   width: 100%;
   height: 100%;
@@ -292,11 +293,11 @@ body .container main #contact .containerContact .infoCont {
 }
 body .container main #contact .containerContact .infoCont .socialList li {
   margin-top: 2rem;
-  margin-left: 15rem;
+  margin-left: 13rem;
 }
 body .container main #contact .containerContact .infoCont .socialList li a i {
   color: var(--color2);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 body .container main #contact .containerContact .infoCont .socialList li a :hover {
   color: var(--colorhover);
