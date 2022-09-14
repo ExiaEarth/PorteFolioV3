@@ -145,7 +145,7 @@ body .container main #presentation #myImage {
   transform: translateX(-40rem);
 }
 body .container main #presentation #myImage img {
-  height: 24rem;
+  height: 25rem;
 }
 body .container main #presentation .textComplem {
   text-align: center;
@@ -200,7 +200,6 @@ body .container main #competences #containeurComp .listcompetence .listTripleLis
   box-shadow: 5px 5px 8px #dc1b1b;
 }
 body .container main #competences #containeurComp .listcompetence .listTripleList ul {
-  margin-top: 0.1rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -213,6 +212,10 @@ body .container main #competences #containeurComp .listcompetence .listTripleLis
   justify-content: center;
   text-align: center;
   list-style: none;
+}
+body .container main #competences #containeurComp .listcompetence .listTripleList ul li p {
+  margin-top: 1rem;
+  text-align: center;
 }
 body .container main #competences #containeurComp .listcompetence .listTripleList ul :hover {
   color: rgb(251, 251, 251);
