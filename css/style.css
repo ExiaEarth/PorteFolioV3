@@ -2,7 +2,7 @@
   --colorbackground: black;
   --colorblanc: white;
   --color2: #00CCC0;
-  --colorhover: crimson;
+  --colorhover: #dc143c;
 }
 
 *, ::before, ::after {
@@ -221,6 +221,7 @@ body .container main #competences #containeurComp .listcompetence .listTripleLis
 body .container main #projets {
   height: 100%;
   width: 100%;
+  overflow-y: scroll;
 }
 body .container main #contact {
   display: inline-block;
