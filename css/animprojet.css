@@ -52,10 +52,10 @@
 #projets .containerProjet #zoneDifProjet #premSite {
   display: block;
   background-position: center;
-  background-image: url("/image/img_projet_premier.png");
+  background-image: url("/image/img_projet_premier.jpg");
 }
 #projets .containerProjet #zoneDifProjet #secSite {
-  background-image: url("/image/img_projet_second.png");
+  background-image: url("/image/img_projet_second.jpg");
   background-position: top;
 }
 
